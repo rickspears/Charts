@@ -12,13 +12,27 @@ pizzaToppings.controller('ChartsCtrl', function ($scope) {
     $scope.toppings.dataTable = new google.visualization.DataTable();
     $scope.toppings.dataTable.addColumn('string', 'Topping');
     $scope.toppings.dataTable.addColumn('number', 'Count');
-    $scope.toppings.dataTable.addRows([
-        ['Extra Cheese', 2],
-        ['Mushrooms', 3],
-        ['Onions', 1],
-        ['Olives', 10],
-        ['Zucchini', 6],
-        ['Pepperoni', 2]
-    ]);
+    //$scope.toppings.dataTable.addRows([
+    //    ['Extra Cheese', 2],
+    //    ['Mushrooms', 3],
+    //    ['Onions', 1],
+    //   ['Olives', 10],
+    //    ['Zucchini', 6],
+    //    ['Pepperoni', 2]
+    //]);
+    var ingredients = [
+            ['Extra Cheese', 2],
+            ['Mushrooms', 3],
+            ['Onions', 1],
+            ['Olives', 111],
+            ['Zucchini', 6],
+            ['Pepperoni', 2]
+    ];
+    angular.forEach(ingredients, function (row) {
+        alert(row);
+        $scope.toppings.dataTable.addRow(row);
+    })
     $scope.toppings.title = "Pizza Toppings"
+
+    //http://jsfiddle.net/nCFd6/22/    
 });
