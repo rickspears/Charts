@@ -17,5 +17,6 @@ namespace Charts.Data
         void Remove(T entity);
         void Remove(int id);
         void Update(T entity);
+        void Commit();
     }
 }

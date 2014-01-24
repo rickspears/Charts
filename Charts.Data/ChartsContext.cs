@@ -11,11 +11,11 @@ namespace Charts.Data
 {
     public class ChartsContext : DbContext 
     {
-        public ChartsContext() : base ("DefaultConnection") { }
+        public ChartsContext() : base ("DefaultConnection") {
+            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.ProxyCreationEnabled = false;
 
-        static ChartsContext()
-        {
-            Database.SetInitializer(new ChartsDatabaseInitializer());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ChartsContext, ChartsDatabaseInitializer>());
         }
 
         public DbSet<Item> Items { get; set; }
