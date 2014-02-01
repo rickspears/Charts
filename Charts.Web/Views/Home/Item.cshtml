@@ -55,5 +55,10 @@
 }
 <body ng-controller="ChartsCtrl">
     <div google-chart="PieChart" ng-model="toppings" class="size"></div>
+    @foreach (var item in Model)
+    {
+        <div>@item.Name -- @item.Quantity</div>        
+    }
 </body>
+    
 
