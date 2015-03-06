@@ -1,0 +1,14 @@
+﻿<div class="panel panel-primary">
+  <div class="panel-heading" style="font-size:large"> Item List </div>
+  <div class="panel-body">
+    <table class="table">
+      <thead><tr><td>Name</td><td>Quantity</td></tr></thead>
+      <tbody>
+        <tr ng-repeat="item in vm.items">
+          <td>{{item.name}}</td>
+          <td>{{item.quantity}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

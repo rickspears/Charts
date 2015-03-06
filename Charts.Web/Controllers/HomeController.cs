@@ -29,12 +29,7 @@ namespace Charts.Web.Controllers
             return View();
         }
 
-        public ActionResult Item()
-        {
-            ViewBag.Message = "Your Item Page";
-            var items = repository.GetAll();
-            return View(items);
-        }
+
         #endregion
     }
 }
