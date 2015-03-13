@@ -2,16 +2,16 @@
   "use strict";
   angular
     .module("chartDemo")
-    .controller("AnalyticsCtrl",
+    .controller("DailyTableController",
                     ["$scope",
                      "items",
-                     AnalyticsCtrl]);
+                     DailyTableController]);
 
-  function AnalyticsCtrl($scope, items) {
+  function DailyTableController($scope, items) {
     $scope.title = "Analytics";
     $scope.chartType = 'bar';
     var chartDataAmount = [];
-    for (var i = 0; i< items.length; i++){
+    for (var i = 0; i < items.length; i++) {
       chartDataAmount.push({
         x: items[i].name,
         y: [items[i].quantity]

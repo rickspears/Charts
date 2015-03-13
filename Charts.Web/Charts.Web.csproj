@@ -173,6 +173,9 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\app\analytics\dailySalesController.js" />
+    <Content Include="Scripts\app\analytics\dailyTableController.js" />
+    <Content Include="Scripts\app\analytics\dailyTotalsController.js" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\main\itemListCtrl.js" />
     <Content Include="Scripts\app\templates\analytics.html" />
@@ -993,6 +996,10 @@
     <Content Include="Scripts\services\common.js" />
     <Content Include="Scripts\services\crudService.js" />
     <Content Include="Scripts\services\itemResource.js" />
+    <Content Include="Scripts\app\analytics2\analytics.html" />
+    <Content Include="Scripts\app\analytics2\charts.html" />
+    <Content Include="Scripts\app\analytics2\charts2.html" />
+    <Content Include="Scripts\app\analytics2\table.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
