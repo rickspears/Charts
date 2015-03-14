@@ -61,7 +61,7 @@
                }
              },
              "dailyTotals@analyticstest": { 
-               templateUrl: "Scripts/app/analytics2/charts2.html",
+               templateUrl: "Scripts/app/analytics2/charts.html",
                controller: "DailyTotalsController",
                resolve: {
                  itemResource: "itemResource",

@@ -14,7 +14,7 @@
     for (var i = 0; i < items.length; i++) {
       chartDataAmount.push({
         x: items[i].name,
-        y: [items[i].quantity]
+        y: [items[i].quantity+100]
       });
     }
 
